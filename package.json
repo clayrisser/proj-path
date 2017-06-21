@@ -1,0 +1,43 @@
+{
+  "name": "proj-path",
+  "version": "0.0.2",
+  "description": "Get the project path of your NodeJS application",
+  "main": "./dist/proj-path.js",
+  "repository": "https://jamrizzi.com",
+  "author": "Jam Risser <jam@jamrizzi.com> (https://jam.jamrizzi.com)",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra-promise": "^1.0.1",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-node5": "^12.0.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-bump": "^2.7.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-uglify": "^3.0.0",
+    "toolz-cli": "^0.0.26"
+  },
+  "scripts": {
+    "start": "node ./node_modules/babel-cli/bin/babel-node ./node_modules/toolz-cli/dist/toolz-cli run start",
+    "test": "node ./node_modules/babel-cli/bin/babel-node ./node_modules/toolz-cli/dist/toolz-cli run test",
+    "build": "node ./node_modules/babel-cli/bin/babel-node ./node_modules/toolz-cli/dist/toolz-cli run build",
+    "clean": "node ./node_modules/babel-cli/bin/babel-node ./node_modules/toolz-cli/dist/toolz-cli run clean",
+    "prepublishOnly": "node ./node_modules/babel-cli/bin/babel-node ./node_modules/toolz-cli/dist/toolz-cli run publish"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-2"
+    ],
+    "plugins": [
+      "transform-async-to-generator"
+    ]
+  }
+}
