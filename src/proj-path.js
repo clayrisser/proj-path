@@ -3,7 +3,7 @@ import _ from 'lodash';
 
 module.exports = () => {
   let projPath = '';
-  let possiblePaths = _.remove(require.main.paths, (path) => {
+  let possiblePaths = _.remove(_.clone(require.main.paths), (path) => {
     const matches = path.match(/node_modules/g) || [];
     if (matches.length > 1) return false;
     return fs.existsSync(path);
