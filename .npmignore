@@ -65,6 +65,7 @@ typings/
 # Application
 src/
 tools/
+test/
 .eslintrc
 yarn.lock
 .editorconfig
