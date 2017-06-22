@@ -1,12 +1,13 @@
 {
   "name": "proj-path",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Get the project path of your NodeJS application",
   "main": "./dist/proj-path.js",
   "repository": "https://jamrizzi.com",
   "author": "Jam Risser <jam@jamrizzi.com> (https://jam.jamrizzi.com)",
   "license": "MIT",
   "dependencies": {
+    "babel-polyfill": "^6.23.0",
     "fs-extra-promise": "^1.0.1",
     "lodash": "^4.17.4"
   },
