@@ -1,6 +1,6 @@
 {
   "name": "proj-path",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Get the project path of your NodeJS application from anywhere",
   "main": "./index.js",
   "repository": "https://jamrizzi.com",
