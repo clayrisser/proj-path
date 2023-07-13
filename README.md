@@ -2,6 +2,8 @@
 
 Get the project path of your NodeJS application from anywhere
 
+![](assets/proj-path.png)
+
 Please &#9733; this repo if you found it useful &#9733; &#9733; &#9733;
 
 
